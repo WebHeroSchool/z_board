@@ -1,9 +1,39 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+  border: dashed 1px red;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
   font-family: 'PT Serif', serif;
+  padding: 40px 0;
+}
+
+.menu, .logo {
+  display: inline-block;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
 }
 
 .menu__item {
   font-family: 'Roboto', sans-serif;
+  padding: 0 13px;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
 }
 
 .main-content__title {
