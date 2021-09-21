@@ -11,10 +11,13 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 246px;
 }
 
 .logo {
   font-family: 'PT Serif', serif;
+  font-size: 24px;
+  font-weight: 700;
   padding: 40px 0;
 }
 
@@ -29,6 +32,8 @@ body {
 
 .menu__item {
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
   padding: 0 13px;
 }
 
@@ -38,12 +43,20 @@ body {
 
 .main-content__title {
   font-family: 'PT Serif', serif;
+  font-size: 66px;
+  font-weight: 700;
+  margin-bottom: 40px;
 }
 
 .main-content__description {
   font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 41px;
 }
 
 .main-content__button {
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
