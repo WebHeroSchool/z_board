@@ -97,6 +97,7 @@ body {
   padding: 81px 64% 143px 4px;
   background: top 5px right 5px no-repeat url(img/mainImg.svg);
   background-size: 50% auto;
+  margin-bottom: 125px;
 }
 
 .main__title {
@@ -106,7 +107,7 @@ body {
 }
 
 .main__title-text_highlight {
-  background: #ECF3FF;
+  background: linear-gradient(to top, transparent 5%, #ECF3FF 5%, #ECF3FF 86%, transparent 10%);
 }
 
 .main__subtitle {
@@ -129,4 +130,11 @@ body {
 
 .main__button:hover {
   opacity: .5;
+}
+
+.ellipsis {
+  margin: auto;
+  background: url('img/ellipsis.svg');
+  width: 32px;
+  height: 8px;
 }
