@@ -10,13 +10,13 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 246px;
+  margin-bottom: 127px;
 }
 
 .logo {
   position: relative;
   padding: 40px 0;
-  padding-left: 44px;
+  padding-left: 48px;
   font: 24px/31px pt_serifbold, Arial, sans-serif;
 }
 
@@ -26,8 +26,8 @@ body {
 
 .logo__circle {
   position: absolute;
-  left: 0;
-  top: 50%;
+  left: 3px;
+  top: 48%;
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
@@ -40,20 +40,25 @@ body {
 }
 
 .logo__circle_color_blue {
-  left: 8px;
+  left: 12px;
   top: 56%;
   background: #C8DBFB;
 }
 
-.menu{
+.menu {
   display: flex;
   align-items: center;
+  margin-right: 11px;
+  /* padding-right: 11px;
+  padding-top: 2px; */
 }
 
 .menu__item {
   position: relative;
   margin-right: 26px;
+  margin-top: 4px;
   font: 18px/21px robotomedium, Arial, sans-serif;
+  /* font: 14px/16px robotomedium, Arial, sans-serif; */
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
@@ -88,20 +93,48 @@ body {
   transform: scaleX(1);
 }
 
-.main-content {
-  width: 37%;
+.main {
+  padding: 81px 64% 143px 4px;
+  background: top 5px right 5px no-repeat url(img/mainImg.svg);
+  background-size: 50% auto;
+  margin-bottom: 125px;
 }
 
-.main-content__title {
+.main__title {
+  margin: 1px 0 38px 0;
   font: 66px/85px pt_serifbold, Arial, sans-serif;
-  margin-bottom: 40px;
+  /* font: 50px/65px pt_serifbold, Arial, sans-serif; */
 }
 
-.main-content__description {
+.main__title-text_highlight {
+  background: linear-gradient(to top, transparent 5%, #ECF3FF 5%, #ECF3FF 86%, transparent 10%);
+}
+
+.main__subtitle {
+  margin: 0 0 41px 0;
   font: 22px/26px robotoregular, Arial, sans-serif;
-  margin-bottom: 41px;
+  /* font: 18px/21px robotoregular, Arial, sans-serif; */
 }
 
-.main-content__button {
+.main__button {
+  display: inline-block;
   font: 18px/21px robotomedium, Arial, sans-serif;
+  /* font: 14px/16px robotomedium, Arial, sans-serif; */
+  color: #FFF;
+  background: #0056EC;
+  padding: 18px 34px 19px 22px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity .5s;
+}
+
+.main__button:hover {
+  opacity: .5;
+}
+
+.ellipsis {
+  margin: auto;
+  background: url('img/ellipsis.svg');
+  width: 32px;
+  height: 8px;
 }
