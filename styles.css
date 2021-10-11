@@ -18,6 +18,25 @@ body {
   padding: 40px 0;
   padding-left: 48px;
   font: 24px/31px pt_serifbold, Arial, sans-serif;
+  animation: logo-color infinite 5s;
+}
+
+@keyframes logo-color {
+  0% {
+    color: #000;
+  }
+  25% {
+    color: #0056EC;
+  }
+  50% {
+    color: #C8DBFB;
+  }
+  75% {
+    color: #0056EC;
+  }
+  100% {
+    color: #333;
+  }
 }
 
 .menu, .logo {
@@ -109,7 +128,7 @@ body {
 }
 
 .main__title-text_highlight {
-  background: linear-gradient(to top, #ecf3ff 0%, #ecf3ff 60%, #fff 82% 100%);
+  background: linear-gradient(to top, #ecf3ff 0%, #ecf3ff 86%, #fff 82% 100%);
 }
 
 .main__subtitle {
