@@ -18,6 +18,25 @@ body {
   padding: 40px 0;
   padding-left: 48px;
   font: 24px/31px pt_serifbold, Arial, sans-serif;
+  animation: logo-color infinite 5s;
+}
+
+@keyframes logo-color {
+  0% {
+    color: #000;
+  }
+  25% {
+    color: #0056EC;
+  }
+  50% {
+    color: #C8DBFB;
+  }
+  75% {
+    color: #0056EC;
+  }
+  100% {
+    color: #333;
+  }
 }
 
 .menu, .logo {
@@ -53,8 +72,6 @@ body {
   display: flex;
   align-items: center;
   margin-right: 11px;
-  /* padding-right: 11px;
-  padding-top: 2px; */
 }
 
 .menu__item {
@@ -83,7 +100,7 @@ body {
   transition: opacity .5s ;
   visibility: hidden;
   transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
 }
 
 .menu__item:hover {
@@ -109,7 +126,7 @@ body {
 }
 
 .main__title-text_highlight {
-  background: linear-gradient(to top, #ecf3ff 0%, #ecf3ff 60%, #fff 82% 100%);
+  background: linear-gradient(to top, #ecf3ff 0%, #ecf3ff 86%, #fff 82% 100%);
 }
 
 .main__subtitle {
@@ -234,7 +251,7 @@ body {
   }
 
   .main__title {
-    font: bold 45px/60px pt_serifbold, arial, helvetica, sans-serif;
+    font: 45px/60px pt_serifbold, arial, helvetica, sans-serif;
   }
 }
 
@@ -308,7 +325,7 @@ body {
     display: inline-block;
     margin-bottom: 25px;
     color: #333;
-    font: 30px/35px 'robotomedium', Arial, Helvetica, sans-serif;
+    font: 30px/35px robotomedium, Arial, Helvetica, sans-serif;
     text-decoration: none;
   }
 
@@ -345,9 +362,7 @@ body {
 
   .main {
     text-align: center;
-    /* padding: 23px 56% 143px 0px; */
     margin-bottom: 18px;
-    /* padding: 223px 0 25px 0; */
     padding: 480px 25px 25px 25px;
     background-size: 74%;
     background-position: top center;
